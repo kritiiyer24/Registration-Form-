@@ -31,4 +31,14 @@ if(age==="")
 else{ 
     document.getElementById("ageError").innerHTML=""; 
 } 
+
+if(valid){
+    var displayDiv = document.getElementById("displayValues");
+    displayDiv.innerHTML = "<h3>Submitted Information:</h3>" +
+    "<p>Name: " + name + "</p>" + "<p>Email: " + email + "</p>" + "<p>Age: " + age + "</p>";
+    }
+
+else{
+        document.getElementById("displayValues").innerHTML = "";
+    }
 } 
